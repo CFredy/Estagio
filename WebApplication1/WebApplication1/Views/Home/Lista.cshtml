@@ -1,0 +1,18 @@
+﻿@model WebApplication1.Models.Tarefa
+
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Lista</h2>
+
+<div>
+    <b>@Html.LabelFor(x => x.TarefaId)</b>
+</div>
+<div>
+    @Model.TarefaId
+</div>
+
+
+
+@Html.ActionLink("Voltar", "Index", "Home");

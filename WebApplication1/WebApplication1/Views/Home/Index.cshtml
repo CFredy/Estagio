@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.Tarefa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>CheckList de tarefas</h2>
+
+<br />
+<br />
+
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Tarefas </legend>
+
+
+        <div>
+            @Html.LabelFor(x => x.TarefaId)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.TarefaId)
+        </div>
+        <p><input type="submit" value="Enviar" /></p>
+    </fieldset>
+
+}
+
